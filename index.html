@@ -16,6 +16,42 @@
 <a href="https://www.w3schools.com/">Сайт помощьник2</a>
 <a href="https://jsitor.com/">Сайт оплатчик</a>
     <a href="https://msiter.ru/references/html5-canvas/filltext">Сайт помощьник3</a>
+    <a href="<!DOCTYPE html>
+<html>
+<head>
+  <title>������� ����������� ��������</title>
+  <style>
+    #canvas {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    var isDrawing = false;
+
+    canvas.addEventListener('mousedown', function(e) {
+      isDrawing = true;
+      ctx.beginPath();
+      ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+    });
+
+    canvas.addEventListener('mousemove', function(e) {
+      if (isDrawing) {
+        ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        ctx.stroke();
+      }
+    });
+
+    canvas.addEventListener('mouseup', function() {
+      isDrawing = false;
+    });
+  </script>
+</body>
+</html>">Рисовальщик</a>
 <font face=”Arial” size=”8” color=”red” >Я люблю котиков и липтон , но больше всего я ЛюБлЮ СПАТЬ</font>
 <font color=’#191970’>Котики = спать , я = спать</font>
 <MARQUEE BEHAVIOR=slide>
