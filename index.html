@@ -90,7 +90,13 @@
       canvas.onmouseup = stopDrawing;
       canvas.onmouseout = stopDrawing;
       canvas.onmousemove = draw;
+var cardInfo = new CardInfo('4377730000000000');
+console.log('Название банка:', cardInfo.bankName);
+// > Название банка: Тинькофф Банк
+console.log('Логотип банка:', cardInfo.bankLogo);
+// > Логотип банка: /bower_components/card-info/dist/banks-logos/ru-tinkoff.svg
 }
 </table>
 </body>
+	
 </html>
